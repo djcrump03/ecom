@@ -1,6 +1,15 @@
 import { 
-    SET_USER_PURCHASES
+    SET_USER_PURCHASES,
+    SET_PURCHASE_DETAIL
 } from './types';
+
+export function setPurchaseDetail(_id) {
+    return ({
+        type: SET_PURCHASE_DETAIL,
+        payload: _id
+    })
+}
+
 export function fetchUserPurchases() {
     return ({
         type: SET_USER_PURCHASES,
@@ -12,7 +21,7 @@ export function fetchUserPurchases() {
                 orderDate: new Date(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Dionna Crump',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
@@ -23,7 +32,7 @@ export function fetchUserPurchases() {
                 orderDate: new Date(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Maxwell Nelson',
+                    name: 'Johanna Gross',
                     shippingAddress: '1337 West State Street'
                 }
             },
@@ -34,7 +43,7 @@ export function fetchUserPurchases() {
                 orderDate: new Date(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Dionna Crump',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
@@ -45,7 +54,7 @@ export function fetchUserPurchases() {
                 orderDate: new Date(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Dionna Crump',
+                    name: 'Johanna Gross',
                     shippingAddress: '1234 West State Street'
                 }
             },
@@ -56,7 +65,7 @@ export function fetchUserPurchases() {
                 orderDate: new Date(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Maxwell Nelson',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
@@ -67,7 +76,7 @@ export function fetchUserPurchases() {
                 orderDate: new Date(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Dionna Crump',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
@@ -78,7 +87,7 @@ export function fetchUserPurchases() {
                 orderDate: new Date(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Maxwell Nelson',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
@@ -89,11 +98,11 @@ export function fetchUserPurchases() {
                 orderDate: new Date(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Johanna Gross',
+                    name: 'Dionna Crump',
                     shippingAddress: '348 Yo State Street'
                 }
             },
-
+          
         ]
     })
 }
