@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+
 import { reduxForm, Field } from 'redux-form';
-import { FormInput, FormButton } from '../formFields';
+
+import { FormInput, FormButton, LongGrayButton } from '../formFields';
+
 import history from '../../history';
+
 class AccountInformationForm extends Component {
     render() {
         const { className, handleSubmit } = this.props;
-
+    
         return (
             <form onSubmit={handleSubmit} className={`${className} account-information-form`}>
                 <Field className='account-information-form__name'
@@ -20,7 +24,6 @@ class AccountInformationForm extends Component {
                 placeholder='Email'
                 name='email'
                 component={FormInput}/>
-
                 <Field className='account-information-form__street-address'
                 type='address'
                 title='Street Address'
@@ -33,8 +36,6 @@ class AccountInformationForm extends Component {
                 placeholder='City'
                 name='city'
                 component={FormInput}/>
-
-
                 <Field className='account-information-form__state'
                 type='state'
                 title='State'
@@ -49,12 +50,13 @@ class AccountInformationForm extends Component {
                 component={FormInput}/>
 
 
-                {/* <Field className='account-information-form__login'
-                onClick={() => history.push('/account')}
-                type='submit'
-                title='Login'
-                name='login'
-                component={FormButton}/> */}
+                <Field className='account-information-form__change-password'
+                onClick={() => console.log('tryna show passwords')}
+                type='button'
+                labelTitle='Password'
+                title='Change Password'
+                name='change-password'
+                component={LongGrayButton}/>
 
             </form>
         )
@@ -63,4 +65,4 @@ class AccountInformationForm extends Component {
 AccountInformationForm = reduxForm({
     form: 'AccountInformationForm'
 })(AccountInformationForm);
-export default AccountInformationForm; 
+export default AccountInformationForm;
