@@ -27,8 +27,13 @@ body {
 
 // SHOP
 @import 'shop/shop'; 
-@import 'shop-search-bar';
-@import 'shop-product';
+@import 'shop/shop-search-bar';
+@import 'shop/shop-product';
+
+//CART
+@import 'shop/shop-cart';
+
+
 
 // QUANTITY
 @import 'quantity';
