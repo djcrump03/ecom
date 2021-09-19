@@ -21,6 +21,7 @@ export default function(state = INITIAL_STATE, action) {
         const { links, onClick } = action.payload; 
             return {
                 ...state,
+                navbarLinks: action.payload,
                 navbarLinks: links,
                 onClick: onClick
             }

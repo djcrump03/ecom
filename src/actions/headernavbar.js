@@ -3,6 +3,7 @@ import {
     SET_NAVBAR_LINKS,
     CHANGE_NAVBAR_ACTIVE
 } from './types';
+
 export function setHeaderLinks(links) {
     return ({
         type: SET_HEADER_LINKS,
