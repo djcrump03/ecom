@@ -6,7 +6,7 @@ import PageTitle from '../pageTitle';
 class Review extends Component {
     componentDidMount() {
         
-            this.props.setHeaderLInks([]);
+            this.props.setHeaderLinks([]);
             this.props.setNavbarLinks([]);
         }
     
