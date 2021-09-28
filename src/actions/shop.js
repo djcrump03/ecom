@@ -1,24 +1,28 @@
 import {
-    SET_SHOP_CATEGORIES,
+    // SET_SHOP_CATEGORIES
     SET_NAVBAR_LINKS,
     SET_SHOP_PRODUCTS,
     FILTER_PRODUCTS_WITH_CATEGORY_ID,
-    FILTER_PRODUCTS_WITH_QUERY
+    FILTER_PRODUCTS_WITH_QUERY,
+    SET_SHOP_CATEGORIES
 } from './types';
 
-export function filterProductsWithQuery(fields) {
+export function filterProductsWithQuery (fields){
     return ({
         type: FILTER_PRODUCTS_WITH_QUERY,
         payload: fields
     })
 }
 
-export function filterProductsWithCategoryId(_id) {
-    return ({
+export function filterProductsWithCategoryId (_id){
+    return({
         type: FILTER_PRODUCTS_WITH_CATEGORY_ID,
         payload: _id
     })
 }
+
+
+
 
 export function fetchShopCategories() {
     return ({
@@ -46,16 +50,18 @@ export function fetchShopCategories() {
             },
             {
                 _id: 5,
-                title: 'UML'
+                title: 'UML',
+        
             },
             {
                 _id: 6,
                 title: 'Ruby'
+                
             },
+            
         ]
-
     })
-}
+} 
 
 export function fetchShopProducts() {
     return ({
@@ -112,4 +118,4 @@ export function fetchShopProducts() {
             },
         ]
     })
-}
+} 

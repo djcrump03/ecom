@@ -1,9 +1,11 @@
 import { 
     SET_USER_PURCHASES,
     SET_PURCHASE_DETAIL,
+    
     SET_CART_PRODUCTS,
     ADD_CART_PRODUCT
 } from './types';
+
 export function setPurchaseDetail(_id) {
     return ({
         type: SET_PURCHASE_DETAIL,
@@ -47,7 +49,6 @@ export function fetchCartProducts() {
         ]
     })
 }
-
 export function fetchUserPurchases() {
     return ({
         type: SET_USER_PURCHASES,

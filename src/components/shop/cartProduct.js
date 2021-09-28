@@ -18,5 +18,4 @@ class CartProduct extends Component {
         )
     }
 }
-
-export default CartProduct; 
+export default CartProduct;

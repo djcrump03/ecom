@@ -4,6 +4,7 @@ import {
     SET_CART_PRODUCTS,
     ADD_CART_PRODUCT
 } from '../actions/types';
+
 const INITIAL_STATE = {
     cartProducts: [],
     purchases: [],
@@ -19,6 +20,8 @@ const INITIAL_STATE = {
         }
     }
 }
+
+
 export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
         case ADD_CART_PRODUCT:
@@ -48,6 +51,7 @@ export default function(state = INITIAL_STATE, action) {
                 ...state,
                 cartProducts: action.payload
             }
+ 
         case SET_USER_PURCHASES:
             return {
                 ...state,
